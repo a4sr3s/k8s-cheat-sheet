@@ -1,5 +1,7 @@
 # k8s-cheat-sheet
-Kubernetes Cheat Sheet for Admins and CKA testers
+Kubernetes Cheat Sheet for Admins and CKA testers <br>
+Want to test out kubernetes during hacktoberfest? <br>
+Receive USD $100 in infrastructure credit at https://do.co/hacktoberfest100.
 <p>&nbsp;</p>
 
 ## Working with pods
