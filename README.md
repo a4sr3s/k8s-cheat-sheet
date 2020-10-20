@@ -24,7 +24,7 @@ Kubernetes Cheat Sheet for Admins and CKA testers <br>
 | kubectl logs --tail=20 nginx                                              | Print the most recent 20 lines of logs                                |
 | kubectl exec -it nginx -n default -- bash                                 | Access shell in nginx pod in default namespace                        |
 | kubectl get pods --sort-by='.status.containerStatuses[0].restartCount'    | List pods Sorted by Restart Count                                     |
-| kubectl get pods -o wide | grep <node_name>                               | Pods running on a node                                                |
+| kubectl get pods -o wide `|` grep mynode                                  | Pods running on a node                                                |
 
 <p>&nbsp;</p>
 
@@ -42,7 +42,7 @@ Kubernetes Cheat Sheet for Admins and CKA testers <br>
 | kubectl drain my-node                                                     | Drain my-node in preparation for maintenance                          |
 | kubectl uncordon my-node                                                  | Mark my-node as schedulable                                           |
 | kubectl top node my-node                                                  | Show metrics for a given node                                         |
-| kubectl describe nodes | grep Allocated -A 5                              | Resource allocation per node                                          |
+| kubectl describe nodes `|` grep Allocated -A 5                            | Resource allocation per node                                          |
 
 
 <p>&nbsp;</p>
