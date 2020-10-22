@@ -43,7 +43,8 @@ Kubernetes Cheat Sheet for Admins and CKA testers <br>
 | kubectl uncordon my-node                                                  | Mark my-node as schedulable                                           |
 | kubectl top node my-node                                                  | Show metrics for a given node                                         |
 | kubectl describe nodes &#124; grep Allocated -A 5                         | Resource allocation per node                                          |
-
+| kubectl describe nodes &#124; grep Taint                                  | Check for taints on all nodes                                         |
+| kubectl taint nodes my-node key=value:NoSchedule                          | Create taint on my-node with NoSchedule affect                        |
 
 <p>&nbsp;</p>
 
