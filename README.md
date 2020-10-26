@@ -52,3 +52,13 @@ Kubernetes Cheat Sheet for Admins and CKA testers <br>
 <p>&nbsp;</p>
 
 ## Working with services
+
+| Command                                                                            | Description                             |
+| :-----------                                                                       | :-----------                            |
+| kubectl get services                                                               | List all services                       |
+| kubectl get endpoints                                                              | List service endpoints                  |
+| kubectl get service nginx-service -o yaml                                          | Get service detail                      |
+| kubectl get service nginx-service -o go-template='{{.spec.clusterIP}}'             | Get service cluster ip                  |
+| kubectl get service nginx-service -o go-template='{{(index .spec.ports 0).port}}'  | Get service cluster port                |
+| kubectl expose deployment/my-app --type=LoadBalancer --name=my-service             | Expose deployment as lb service         |
+| kubectl expose service/wordpress-1-svc --type=LoadBalancer --name=ns1              | Expose service as lb service            | 
