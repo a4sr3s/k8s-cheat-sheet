@@ -53,10 +53,8 @@ Kubernetes Cheat Sheet for Admins and CKA testers <br>
 
 ## Working with services
 
-
-** Service
 | Name                            | Command                                                                           |
-|---------------------------------+-----------------------------------------------------------------------------------|
+| :-----------                    | :-----------                                                                      |
 | List all services               | =kubectl get services=                                                            |
 | List service endpoints          | =kubectl get endpoints=                                                           |
 | Get service detail              | =kubectl get service nginx-service -o yaml=                                       |
