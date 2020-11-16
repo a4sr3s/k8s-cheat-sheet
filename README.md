@@ -62,3 +62,14 @@ Kubernetes Cheat Sheet for Admins and CKA testers <br>
 | kubectl get service nginx-service -o go-template='{{(index .spec.ports 0).port}}'  | Get service cluster port                |
 | kubectl expose deployment/my-app --type=LoadBalancer --name=my-service             | Expose deployment as lb service         |
 | kubectl expose service/wordpress-1-svc --type=LoadBalancer --name=ns1              | Expose service as lb service            | 
+
+<p>&nbsp;</p>
+
+---
+<p>&nbsp;</p>
+
+## Working with cluster-autoscaler
+
+| Command                                                                            | Description                             |
+| :-----------                                                                       | :-----------                            |
+| kubectl describe configmap cluster-autoscaler-status -n kube-system                | show status of cluster-autoscaler       |
